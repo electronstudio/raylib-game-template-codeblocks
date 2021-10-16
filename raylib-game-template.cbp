@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="raylib-game-template" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/raylib-game-template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="raylib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/raylib-game-template" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="raylib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="src/raylib_game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/resources/LICENSE" />
+		<Unit filename="src/resources/ambient.ogg" />
+		<Unit filename="src/resources/coin.wav" />
+		<Unit filename="src/resources/mecha.png" />
+		<Unit filename="src/screen_ending.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/screen_gameplay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/screen_logo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/screen_options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/screen_title.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/screens.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
